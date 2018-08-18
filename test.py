@@ -41,6 +41,9 @@ import pandas as pd
 import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
+import patsy
+import statsmodels.api as sm
+from sklearn.svm import LinearSVC
 
 r = requests.get("https://api.github.com/users/gcaggia/starred")
 print(r.json())
@@ -121,6 +124,10 @@ sns.pairplot(df,hue='class')
 
 plt.tight_layout()
 plt.show()
+
+
+
+print("hello world")
 
 
 
